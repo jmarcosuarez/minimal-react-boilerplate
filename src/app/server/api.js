@@ -8,13 +8,13 @@ const PORT = process.env.PORT || 3001;
 
 // Enable CORS to enable calls to http://localhost:
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
 
 app.get('/api', (req, res) => {
-  res.sendFile(path.normalize(path.join(__dirname, '/../../data/transactions.json')));
+  res.sendFile(path.normalize(path.join(__dirname, '/../../data/data.json')));
 });
 
 app.listen(PORT, IP, (err) => {

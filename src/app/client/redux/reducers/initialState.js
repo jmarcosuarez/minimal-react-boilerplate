@@ -1,5 +1,3 @@
 export default {
-  bankList: [],
-  bank: '',
-  transactions: [],
+  data: [],
 };

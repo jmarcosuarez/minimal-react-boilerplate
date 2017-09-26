@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --env=dev --progress --colors --inline",
+    "dev": "concurrently --kill-others \"npm run dev-api\" \"npm run webpack-dev-server\"",
+    "webpack-dev-server": "webpack-dev-server --env=dev --progress --colors --inline",
+    "dev-api": "node ./src/app/server/api.js",
     "build": "npm run clean && webpack -p --env=prod --progress --profile --colors",
     "prod": "node server.prod.js",
     "clean": "rimraf ./dist/*",
@@ -69,6 +71,8 @@
     "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
+    "concurrently": "^3.5.0",
+    "express": "^4.15.5",
     "isomorphic-fetch": "^2.2.1",
     "prop-types": "^15.5.10",
     "react": "^15.4.2",

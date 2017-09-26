@@ -1,7 +1,6 @@
-import { setChoosenBank, setTransactions, fetchTransactions } from './bank';
+import { setData, fetchFriends } from './main';
 
 export {
-  setChoosenBank,
-  setTransactions,
-  fetchTransactions,
+  fetchFriends,
+  setData,
 };
