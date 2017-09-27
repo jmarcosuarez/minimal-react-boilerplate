@@ -1,6 +1,5 @@
-import { setData, fetchFriends } from './main';
+import { sendGetFriendsRequest } from './main';
 
 export {
-  fetchFriends,
-  setData,
+  sendGetFriendsRequest,
 };
