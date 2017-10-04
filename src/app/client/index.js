@@ -34,3 +34,6 @@ if (__DEVTOOLS__ && !global.devToolsExtension) {
   );
 }
 
+if (module.hot) {
+  module.hot.accept();
+}

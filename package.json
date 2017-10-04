@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently --kill-others \"npm run dev-api\" \"npm run webpack-dev-server\"",
-    "webpack-dev-server": "webpack-dev-server --env=dev --progress --colors --inline",
+    "webpack-dev-server": "webpack-dev-server --env=dev --progress --colors",
     "dev-api": "node ./src/app/server/api.js",
     "build": "npm run clean && webpack -p --env=prod --progress --profile --colors",
     "prod": "node server.prod.js",
@@ -34,6 +34,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "bootstrap-loader": "^2.1.0",
     "bootstrap-sass": "^3.3.7",
+    "concurrently": "^3.5.0",
     "css-loader": "^0.26.2",
     "enzyme": "^2.7.1",
     "enzyme-to-json": "^1.5.1",
@@ -68,10 +69,9 @@
     "style-loader": "^0.13.2",
     "url-loader": "^0.5.9",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.1"
+    "webpack-dev-server": "^2.9.1"
   },
   "dependencies": {
-    "concurrently": "^3.5.0",
     "express": "^4.15.5",
     "isomorphic-fetch": "^2.2.1",
     "prop-types": "^15.5.10",
