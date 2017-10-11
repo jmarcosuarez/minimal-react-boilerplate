@@ -9,12 +9,11 @@ To run the development server on **http://localhost:8080
 
 ```npm run dev```
 
-To run the production server:
+To run the production server: (Test it in **http://localhost:4000)
 
 ```npm run build```
+
 ```npm run prod``` 
- 
-(Test it in **http://localhost:4000)
 
 ## Contributing
 1. Fork it!
