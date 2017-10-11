@@ -6,10 +6,14 @@ Minimal react boilerplate - babel/webpack2, postCSS/css-modules, Jest/Enzyme
 
 ## Usage
 To run the development server on **http://localhost:8080
+
 ```npm run dev```
+
 To run the production server:
+
 ```npm run build```
-```npm run prod```  
+```npm run prod``` 
+ 
 (Test it in **http://localhost:4000)
 
 ## Contributing
