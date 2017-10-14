@@ -1,6 +1,59 @@
 @import "../../../static/stylesheets/containers/layout.css";
+@import "../../../static/stylesheets/abstracts/all.css";
 
 .logo {
   text-align: center;
   margin-bottom: 20px;
+}
+
+.pageLoader {
+  display: flex;
+  justify-content: center;
+
+  & div {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    border-top-color: var(--color2);
+    animation: spin 2s linear infinite;
+
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      border-top-color: var(--color3);
+      animation: spin 3s linear infinite;
+
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        border-top-color: var(--color4);
+        animation: spin 1.5s linear infinite;
+
+    }
+  }
+}
+
+@-webkit-keyframes spin {
+    0%   { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+}
+@keyframes spin {
+    0%   { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
 }

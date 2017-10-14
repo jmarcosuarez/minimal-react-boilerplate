@@ -21,7 +21,7 @@ class HomePage extends Component {
     if (this.props.isFetching) {
       return (
         <div className={styles.pageLoader}>
-          Loading friends.
+          <div />
         </div>
       );
     }
