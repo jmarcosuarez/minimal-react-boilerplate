@@ -1,4 +1,5 @@
 # minimal-react-boilerplate
+## Warning! This project is very old at this point! Some of the ideas may be fine would not recommend you use it as a modern reference
 Minimal react boilerplate - babel/webpack2, postCSS/css-modules, Jest/Enzyme
 
 ## Installation
